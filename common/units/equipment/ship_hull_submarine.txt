@@ -81,7 +81,7 @@ equipments = {
 			steel = 2
 		}
 		
-		manpower = 200
+		manpower = 20
 		naval_supremacy_factor = 0.8					  
 	}
 
@@ -344,7 +344,7 @@ equipments = {
 			steel = 1
 		}
 		
-		manpower = 200
+		manpower = 20
 	}
 	
 	submarine_2 = {

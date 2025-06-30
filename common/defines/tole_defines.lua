@@ -4,7 +4,7 @@ NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 0
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 100
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 300
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.25, 0.22, 0.16, 0.055, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.6, 0.3, 0.16, 0.055, 0.0 } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROLLED = 0       -- WAS 1
 NDefines.NAI.GIVE_STATE_CONTROL_MIN_CONTROL_DIFF = 0     -- WAS 2
@@ -359,9 +359,9 @@ NDefines.NNavy.MAX_ANTI_AIR_REDUCTION_EFFECT_ON_INCOMING_AIR_DAMAGE = 0.7 -- (0.
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
 		0.0, -- HOLD
-		1.0, -- PATROL		
+		1.5, -- PATROL		
 		0.0, -- STRIKE FORCE 
-		0.5, -- CONVOY RAIDING
+		0.75, -- CONVOY RAIDING
 		0.5, -- CONVOY ESCORT
 		0.3, -- MINES PLANTING	
 		0.3, -- MINES SWEEPING	
