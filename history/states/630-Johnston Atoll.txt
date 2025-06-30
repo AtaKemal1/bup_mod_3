@@ -1,0 +1,30 @@
+state=
+{
+	id=630
+	name="STATE_630"
+	manpower = 100
+	state_category = tiny_island
+	resources={
+		oil=5
+		tungsten = 5
+		steel = 5
+		rubber = 5
+	}
+
+	history={
+        add_core_of = COG
+		owner = USA
+		buildings = {
+			infrastructure = 1
+			13051 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13051 	
+	}
+
+	local_supplies=0.0 
+}

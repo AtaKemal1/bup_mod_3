@@ -1,0 +1,36 @@
+state={
+	id=727
+	name="STATE_727"
+	manpower=5367
+	state_category = small_island
+	resources={
+		oil=5
+		tungsten = 5
+		steel = 5
+		rubber = 5
+		aluminium = 5
+	}
+
+	history={
+        add_core_of = COG
+		owner = USA
+		buildings = {
+			infrastructure = 1
+			13048 = {
+				naval_base = 1
+			}
+			13049 = {
+				naval_base = 1
+			}
+			13053 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13048 13049 13053 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=895
+	name="STATE_895"
+	manpower = 92400
+	state_category = town
+
+	history={
+        add_core_of = COG
+		owner = SAF
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 5
+
+		}
+		
+		add_core_of = SAF
+
+	}
+
+	provinces={
+		8136 12519 13217 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

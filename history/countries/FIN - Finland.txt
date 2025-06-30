@@ -1,0 +1,77 @@
+﻿capital = 111
+
+set_oob = "FIN_1936"
+
+145 = {
+	set_demilitarized_zone = yes
+}
+
+# 1936 BoP (1939 BoP set up below)
+if = {
+	limit = {
+		has_start_date < 1936.01.02
+	}
+	#SISU NS
+	add_ideas = FIN_sisu_2
+}
+
+add_ideas = neutrality_idea
+add_ideas = no_training
+
+set_research_slots = 0
+
+##################
+### CHARACTERS ###
+##################
+
+#Set Kokoomus as Non-Aligned party
+set_party_name = {
+	ideology = neutrality
+	name = FIN_neutrality_party_kokoomus
+	long_name = FIN_neutrality_party_kokoomus_long
+}
+
+set_technology = {
+	infantry_weapons = 1
+}
+
+
+set_convoys = 5
+
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1931.3.2" #Represents Presidential elections (Country leader is President of the Republic, not Prime Minister)
+	election_frequency = 72
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 15
+	fascism = 19
+	communism = 1
+	neutrality = 65
+}
+add_stability = 0.5
+
+create_country_leader = {
+	name = "Risto Heikki Ryti"
+	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
+	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
+	expire = "1965.1.1"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Kyösti Kallio"
+	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
+	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}

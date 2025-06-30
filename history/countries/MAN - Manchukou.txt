@@ -1,0 +1,8 @@
+﻿capital = 328
+
+
+add_ideas = no_training 
+
+
+
+

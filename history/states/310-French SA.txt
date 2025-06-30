@@ -1,0 +1,32 @@
+
+state={
+	id=310
+	name="STATE_310"
+	manpower = 47341
+
+	state_category = pastoral
+	resources = {
+		aluminium = 64 # was: 70
+		steel = 64
+	}
+	history={
+        add_core_of = COG
+		owner = FRA
+		add_core_of = COG
+		buildings = {
+			infrastructure = 1
+			12885 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			12885 1 
+		}
+	}
+
+	provinces={
+		4934 12885 
+	}
+
+	local_supplies=0.0 
+}

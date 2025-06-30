@@ -1,0 +1,82 @@
+﻿capital = 9
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "CZE_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "CZE_1936_nsb"
+}
+add_ideas = neutrality_idea
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "CZE_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			engines_1 = 1
+			engines_2 = 1
+			iw_small_airframe = 1
+			iw_medium_airframe = 1
+			early_bombs = 1
+			bba_early_transport_plane = 1
+		}
+	else = {
+		set_air_oob = "CZE_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+			CAS1 = 1
+			early_transport_plane = 1
+		}
+	}
+}
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+}
+
+
+set_research_slots = 0
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.5.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 65
+	neutrality = 20
+	fascism = 5
+	communism = 10
+}
+add_ideas = no_training
+add_ideas = neutrality_idea
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 15400
+}
+add_equipment_to_stockpile = {
+	type = support_equipment
+	amount = 50
+}
+
+create_country_leader = {
+	name = "Edvard Beneš"
+	desc = "POLITICS_EDVARD_BENES_DESC"
+	picture = "Portrait_Czech_Edvard_Benes.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}

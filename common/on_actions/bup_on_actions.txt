@@ -1,0 +1,712 @@
+on_actions = {
+    # BUP PACIFIC BALANCE
+    on_startup = {
+        effect = {
+            set_variable = { global.fortress_italy_var = -0.15 }
+            set_variable = { global.fortress_italy_var_neg = 0.15}
+            set_variable = { global.atlantic_wall_var_neg = 0.0 }
+            set_variable = { global.atlantic_wall_var = 0.0 }
+            set_variable = { global.pacific_superiority = 0.0 }
+            set_variable = { global.pacific_superiority_neg = 0.0 }
+
+            # fortress italy
+            115 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            156 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            849 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            117 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            157 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            2 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            162 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            158 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            161 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+            160 = {
+                add_dynamic_modifier = { modifier = fortress_italy_idea }
+            }
+
+            # War in pacific
+            USA = {
+                add_dynamic_modifier = { modifier = pacific_superiority_idea }
+            }
+            ENG = {
+                add_dynamic_modifier = { modifier = pacific_superiority_idea }
+            }
+            FRA = {
+                add_dynamic_modifier = { modifier = pacific_superiority_idea }
+            }
+            RAJ = {
+                add_dynamic_modifier = { modifier = pacific_superiority_idea }
+            }
+            AST = {
+                add_dynamic_modifier = { modifier = pacific_superiority_idea }
+            }
+            NZL = {
+                add_dynamic_modifier = { modifier = pacific_superiority_idea }
+            }
+            CAN = {
+                add_dynamic_modifier = { modifier = pacific_superiority_idea }
+            }
+            SAF = {
+                add_dynamic_modifier = { modifier = pacific_superiority_idea }
+            }
+        }
+    }
+    
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        tag = ROM
+                        tag = GER
+                        tag = HUN
+                        tag = ITA   
+                    }
+                    OR = {
+                        FROM = { tag = FRA}
+                        FROM = { tag = ENG}
+                        FROM = { tag = GRE}
+                        FROM = { tag = AST}
+                        FROM = { tag = RAJ}
+                        FROM = { tag = USA}
+                        FROM = { tag = CAN}
+                        FROM = { tag = SAF}
+                    }
+                    FROM.FROM = {
+                        OR = {
+                            state = 448
+                            state = 449
+                            state = 450
+                            state = 451
+                            state = 116
+                            state = 114
+                            state = 1
+                            state = 118
+                            state = 182
+                            state = 164
+                            state = 187
+                            state = 183
+                            state = 452
+                            state = 447
+                            state = 907
+                            state = 446
+                            state = 453
+                            state = 454
+                            state = 553
+                            state = 677
+                            state = 291
+                            state = 656
+                            state = 457
+                            state = 456
+                            state = 883
+                            state = 271
+                            state = 992
+                        }
+                    }
+                }
+                subtract_from_variable = { var = global.fortress_italy_var value = 0.025 }
+                set_variable = { var = global.fortress_italy_var_neg value = global.fortress_italy_var }
+                multiply_variable = { var = global.fortress_italy_var_neg value = -1 }
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        tag = ENG
+                        tag = FRA
+                        tag = USA
+                        tag = CAN
+                        tag = SAF
+                        tag = RAJ
+                        tag = AST
+                    }
+                    OR = {
+                        FROM = { tag = ROM}
+                        FROM = { tag = HUN}
+                        FROM = { tag = ITA}
+                        FROM = { tag = GER}
+                    }
+                    FROM.FROM = {
+                        OR = {
+                            state = 448
+                            state = 449
+                            state = 450
+                            state = 451
+                            state = 116
+                            state = 114
+                            state = 1
+                            state = 118
+                            state = 182
+                            state = 164
+                            state = 187
+                            state = 183
+                            state = 452
+                            state = 447
+                            state = 907
+                            state = 446
+                            state = 453
+                            state = 454
+                            state = 553
+                            state = 677
+                            state = 291
+                            state = 656
+                            state = 457
+                            state = 456
+                            state = 883
+                            state = 271
+                            state = 992
+                        }
+                    }
+                }
+                add_to_variable = { var = global.fortress_italy_var value = 0.025 }
+                set_variable = { var = global.fortress_italy_var_neg value = global.fortress_italy_var }
+                multiply_variable = { var = global.fortress_italy_var_neg value = -1 }    
+            }
+        }
+    }
+
+    on_state_control_changed = {
+        ### AXIS WON AFRICA IDEA REMOVAL
+        effect = {
+            if = {
+                limit = {
+                    FROM.FROM = {
+                        state = 907
+                    }
+                    GER = {
+                        has_idea = ITA_axis_won_africa
+                    }
+                }
+                GER = {
+                    remove_ideas = ITA_axis_won_africa
+                }
+                ITA = {
+                    remove_ideas = ITA_axis_won_africa
+                }
+            }
+        }
+        ### PACIFIC ON ACTIONS
+        effect = {
+            if = {
+                limit = {
+                    tag = JAP
+                    FROM.FROM = {
+                        OR = {
+                            # JAP EASY
+                            state = 995
+                            state = 640
+                            state = 990
+                            state = 336
+                            state = 672
+                            state = 335
+                            state = 667
+                            state = 334
+                            state = 333
+                            state = 673
+                            state = 668
+                            state = 738
+                            state = 638
+                            state = 627
+                            state = 327
+                            # JAP MID
+                            state = 430
+                            state = 431
+                            state = 435
+                            state = 422
+                            state = 669
+                            state = 979
+                            state = 523
+                            state = 737
+                            state = 634
+                            state = 635
+                            state = 734
+                            state = 636
+                            state = 643
+                            state = 639
+                            state = 725
+                            state = 726
+                            state = 632
+                            state = 631
+                            state = 650
+                            state = 630
+                            state = 642
+                            # JAP HARD
+                            state = 727
+                            state = 641
+                            state = 427
+                            state = 425
+                            state = 429
+                            state = 428
+                            state = 443
+                            state = 438
+                            state = 439
+                            state = 629
+                            state = 522
+                            state = 519
+                            state = 517
+                            state = 285
+                            state = 521
+                            state = 520
+
+                            # JAP DEF
+                            state = 524
+                            state = 526
+                            state = 645
+                            state = 646
+                            state = 647
+                            state = 684
+                            state = 633
+                            state = 648
+                        }
+                    }
+                }
+                subtract_from_variable = { var = global.atlantic_wall_var value = 0.05 }
+                subtract_from_variable = { var = global.pacific_superiority value = 0.007 }
+                set_variable = { var = global.pacific_superiority_neg value = global.pacific_superiority }
+                set_variable = { var = global.atlantic_wall_var_neg value = global.atlantic_wall_var }
+                multiply_variable = { var = global.pacific_superiority_neg value = -2 }
+                multiply_variable = { var = global.atlantic_wall_var_neg value = -1 }
+            }
+            if = {
+                limit = {
+                    FROM = { tag = JAP }
+                    FROM.FROM = {
+                        OR = {
+                            # JAP EASY
+                            state = 995
+                            state = 640
+                            state = 990
+                            state = 336
+                            state = 672
+                            state = 335
+                            state = 667
+                            state = 334
+                            state = 333
+                            state = 673
+                            state = 668
+                            state = 738
+                            state = 638
+                            state = 627
+                            state = 327
+                            # JAP MID
+                            state = 430
+                            state = 431
+                            state = 435
+                            state = 422
+                            state = 669
+                            state = 979
+                            state = 523
+                            state = 737
+                            state = 634
+                            state = 635
+                            state = 734
+                            state = 636
+                            state = 643
+                            state = 639
+                            state = 725
+                            state = 726
+                            state = 632
+                            state = 631
+                            state = 650
+                            state = 630
+                            state = 642
+                            # JAP HARD
+                            state = 727
+                            state = 641
+                            state = 427
+                            state = 425
+                            state = 429
+                            state = 428
+                            state = 443
+                            state = 438
+                            state = 439
+                            state = 629
+                            state = 522
+                            state = 519
+                            state = 517
+                            state = 285
+                            state = 521
+                            state = 520
+                            
+                            # JAP DEF
+                            state = 524
+                            state = 526
+                            state = 645
+                            state = 646
+                            state = 647
+                            state = 684
+                            state = 633
+                            state = 648
+                        }
+                    }
+                }
+                add_to_variable = { var = global.atlantic_wall_var value = 0.05 }
+                add_to_variable = { var = global.pacific_superiority value = 0.007 }
+                set_variable = { var = global.pacific_superiority_neg value = global.pacific_superiority }
+                set_variable = { var = global.atlantic_wall_var_neg value = global.atlantic_wall_var }
+                multiply_variable = { var = global.pacific_superiority_neg value = -2 }
+                multiply_variable = { var = global.atlantic_wall_var_neg value = -1 }
+            }
+        }
+    }
+
+    #Dummy tag to prevent multiple executions monthly
+    on_weekly_SWE = {
+        effect = {
+            if = {
+                limit = {
+                    # if variable negative
+                    check_variable = {
+                        global.atlantic_wall_var < 0.0
+                    }
+                }
+                add_to_variable = { var = global.atlantic_wall_var value = 0.01 }
+                set_variable = { var = global.atlantic_wall_var_neg value = global.atlantic_wall_var }
+                multiply_variable = { var = global.atlantic_wall_var_neg value = -1 }
+            }
+        }
+    }
+
+    on_capitulation = {
+        # Partition of Poland
+        effect = {
+            if = {
+                limit = {
+                    AND = {
+                        tag = POL
+                        NOT = {has_global_flag = POL_already_surrendered}
+                    }
+                }
+                set_global_flag = POL_already_surrendered
+                SOV = {
+                    transfer_state = 784
+                    transfer_state = 96
+                    transfer_state = 95
+                    transfer_state = 94
+                    transfer_state = 93
+                    transfer_state = 91
+                    transfer_state = 89
+                    transfer_state = 97
+                }
+            }
+        }
+        # Partition of Yugoslavia
+        effect = {
+            if = {
+                limit = {
+                    AND = {
+                        tag = YUG
+                        NOT = {has_global_flag = YUG_already_surrendered}
+                    }
+                }
+                set_global_flag = YUG_already_surrendered
+                GER = {
+                    set_state_controller = 102
+                    set_state_controller = 853
+                }
+                ITA = {
+                    set_state_controller = 103
+                    set_state_controller = 104
+                    set_state_controller = 105
+                    set_state_controller = 109
+                    set_state_controller = 804
+                    set_state_controller = 107
+                    set_state_controller = 108
+                    set_state_controller = 802
+                    set_state_controller = 970
+                }
+                HUN = {
+                    set_state_controller = 45
+                }
+                ROM = {
+                    set_state_controller = 764
+                }
+                if = {
+                    limit = {
+                        BUL = {
+                            exists = yes
+                        }
+                    }
+                    BUL = {
+                        set_state_controller = 803
+                        set_state_controller = 106
+                    }
+                }
+                else = {
+                    ROM = {
+                        set_state_controller = 803
+                        set_state_controller = 106
+                    }
+                }
+            }
+        }
+        # Partition of Greece
+        effect = {
+            if = {
+                limit = {
+                    AND = {
+                        NOT = {has_global_flag = GRE_already_surrendered}
+                        tag = GRE
+                    }
+                }
+                set_global_flag = GRE_already_surrendered
+                ITA = {
+                    set_state_controller = 185
+                    set_state_controller = 47
+                    set_state_controller = 186
+                    set_state_controller = 182
+                    set_state_controller = 187
+                }
+                if = {
+                    limit = {
+                        BUL = {
+                            exists = yes
+                        }
+                    }
+                    BUL = {
+                        set_state_controller = 731
+                        set_state_controller = 184
+                    }
+                }
+                else = {
+                    ROM = {
+                        set_state_controller = 731
+                        set_state_controller = 184
+                    }
+                }
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    tag = FRA
+                    NOT = { has_global_flag = FRA_surrendered_once}
+                }
+                set_global_flag = FRA_surrendered_once
+                GER = {
+                    set_state_controller = 806
+                    set_state_controller = 19
+                    set_state_controller = 23
+                    set_state_controller = 30
+                    set_state_controller = 14
+                    set_state_controller = 15
+                    set_state_controller = 24
+                    set_state_controller = 16
+                    set_state_controller = 785
+                    set_state_controller = 29
+                    set_state_controller = 18
+                    set_state_controller = 17
+                    set_state_controller = 28
+                    set_state_controller = 27
+                }
+                EFR = {
+                    transfer_state = 735
+                    transfer_state = 32
+                    transfer_state = 21
+                    transfer_state = 851
+                    transfer_state = 1
+                    transfer_state = 665
+                    transfer_state = 458
+                    transfer_state = 31
+                    transfer_state = 25
+                    transfer_state = 26
+                    transfer_state = 33
+                    transfer_state = 22
+                    transfer_state = 20
+                    transfer_state = 460
+                    transfer_state = 513
+                    transfer_state = 459
+                    transfer_state = 461
+                    transfer_state = 462
+                    set_capital = {
+                        state = 26
+                        remember_old_capital = no
+                    }
+                    set_politics = {
+                        ruling_party = fascism
+                        elections_allowed = no
+                    }
+                    set_popularities = {
+                        democratic = 0
+                        fascism = 100
+                        communism = 0
+                        neutrality = 0
+                    }
+                    add_ideas = neutrality_idea
+                    diplomatic_relation = { country = ENG relation = non_aggression_pact }
+                    diplomatic_relation = { country = USA relation = non_aggression_pact }
+                    diplomatic_relation = { country = PHI relation = non_aggression_pact }
+                    diplomatic_relation = { country = FRA relation = non_aggression_pact }
+                    diplomatic_relation = { country = SAF relation = non_aggression_pact }
+                    diplomatic_relation = { country = CAN relation = non_aggression_pact }
+                    diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+                    diplomatic_relation = { country = AST relation = non_aggression_pact }
+                    diplomatic_relation = { country = NZL relation = non_aggression_pact }
+                    diplomatic_relation = { country = GER relation = non_aggression_pact }
+                }
+                FRA = {
+                    set_cosmetic_tag = FRA_FREE
+                    set_country_flag = free_france
+                    transfer_units_fraction= {
+                        target = EFR
+                        size = 1
+                        stockpile_ratio = 1
+                        army_ratio = 1
+                        navy_ratio = 1
+                        air_ratio = 1
+                        keep_unit_leaders_trigger = {
+                            always = yes
+                        }
+                    }
+                    set_capital = {
+                        state = 539
+                        remember_old_capital = no
+                    }
+                    remove_ideas = FRA_protected_by_the_maginot_line
+                    destroy_ships = {
+                        type = ship_hull_light
+                        count = all
+                    }
+                    destroy_ships = {
+                        type = ship_hull_cruiser
+                        count = all
+                    }
+                    destroy_ships = {
+                        type = ship_hull_heavy
+                        count = all
+                    }
+                    destroy_ships = {
+                        type = ship_hull_carrier
+                        count = all
+                    }
+                    destroy_ships = {
+                        type = ship_hull_submarine
+                        count = all
+                    }
+                }
+            }
+        }
+        effect = {
+			if = {
+				limit = {
+                    AND = {
+                        tag = MAL
+                        NOT = {has_global_flag = MAL_already_surrendered}
+                    }
+                }
+                set_global_flag = MAL_already_surrendered
+				JAP = {
+                    set_state_controller = 672
+                    set_state_controller = 336
+                    set_state_controller = 335
+                    set_state_controller = 334
+                    set_state_controller = 333
+                    set_state_controller = 333
+                    set_state_controller = 673
+                    set_state_controller = 667
+                    set_state_controller = 738
+                    set_state_controller = 668
+				}
+			}
+		}
+        effect = {
+			if = {
+				limit = {
+                    AND = {
+                        tag = PHI
+                        NOT = {has_global_flag = PHI_already_surrendered}
+                    }
+                }
+                set_global_flag = PHI_already_surrendered
+				JAP = {
+                    set_state_controller = 628
+                    set_state_controller = 626
+				}
+			}
+		}
+                   effect = {
+                if = {
+                    limit = {
+                        OR={
+                        tag=BEL
+                        tag=HOL
+                        tag=DEN
+                        tag=NOR
+                        tag=LUX
+                        tag=GRE
+                        tag=YUG
+                        tag=POL
+                    }}
+                    country_event={id=surrender.1 days=2}
+            }
+            if = {
+                limit = {
+                    OR={
+                        tag=PHI
+                        tag=MAL
+                    }}
+                   country_event={id=surrender.2 days=2}
+            }
+        }
+            ## Norway
+            effect = {
+            if = {
+                limit = {
+                    AND = {
+                        tag = NOR
+                        NOT = {has_global_flag = NOR_already_surrendered}
+                    }
+                }
+                set_global_flag = NOR_already_surrendered
+                GER = {
+                    set_state_controller = 110
+                    set_state_controller = 921
+                    set_state_controller = 920 
+                    set_state_controller = 922
+                    set_state_controller = 142
+                    set_state_controller = 143
+                    set_state_controller = 923
+                    set_state_controller = 144
+                    set_state_controller = 924
+                    set_state_controller = 925
+                } 
+            }
+        }
+            ## Denmark
+            effect = {
+            if = {
+                limit = {
+                    AND = {
+                        tag = DEN
+                        NOT = {has_global_flag = DEN_already_surrendered}
+                    }
+                }
+                set_global_flag = DEN_already_surrendered
+                GER = {
+                    set_state_controller = 37
+                    set_state_controller = 911
+                    set_state_controller = 99
+                    set_state_controller = 912
+                } 
+            }
+        }
+    }
+}

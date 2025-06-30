@@ -1,0 +1,13 @@
+######################################
+category = {
+ name = "rm_sound"
+ soundeffects = {
+	barbarossa_begin
+	pacific_begin
+	soviet_begin
+	anscluss
+	marco_polo
+	soviet_debuffs
+	rhineland
+ }
+}

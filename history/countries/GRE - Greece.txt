@@ -1,0 +1,42 @@
+﻿capital = 47
+
+oob = "GRE_1936"
+
+set_research_slots = 0
+add_ideas = neutrality_idea
+add_timed_idea = { idea = no_training days= 730 }
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+set_convoys = 10
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.6.9"
+	election_frequency = 7
+	elections_allowed = yes # none after offset 1
+}
+set_popularities = {
+	democratic = 43
+	fascism = 2
+	communism = 17
+	neutrality = 38
+}
+add_manpower = 100000
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 8000
+}
+set_stability = 0.5
+set_convoys = 50
+create_country_leader = {
+	name = "Ioannis Metaxas"
+	desc = "POLITICS_IOANNIS_METAXAS_DESC"
+	picture = "Portrait_Greece_Ioannis_Metaxas.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

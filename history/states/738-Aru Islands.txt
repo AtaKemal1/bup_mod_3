@@ -1,0 +1,33 @@
+state={
+    id=738
+    name="STATE_738"
+    resources = {
+        tungsten = 30.000
+        rubber = 20
+    }
+    history={
+        add_core_of = COG
+		owner = MAL
+		add_core_of = MAL
+		buildings = {
+			infrastructure = 1
+
+            4579 = {
+                naval_base = 1
+
+            }
+
+
+        }
+
+    }
+
+    provinces={
+        4579
+    }
+    manpower=36146
+    buildings_max_level_factor=1
+    state_category="small_island"
+
+    local_supplies=0.0
+}

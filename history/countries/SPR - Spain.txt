@@ -1,0 +1,57 @@
+﻿capital = 41 # Madrid
+
+oob = "SPR_1936"
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "La Resistance"
+		}
+	}
+
+	set_popularities = {
+		democratic = 47
+		fascism = 46
+		communism = 7
+	}
+}
+add_ideas = no_training
+add_ideas = neutrality_idea
+set_research_slots = 0
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+}
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_convoys = 150
+set_stability = 0.5
+
+create_country_leader = {
+	name = "Francisco Franco"
+	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
+	picture = ""
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Alejandro Lerroux"
+	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
+	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
+	expire = "1965.1.1"
+	ideology = centrism
+	traits = {
+		#
+	}
+}

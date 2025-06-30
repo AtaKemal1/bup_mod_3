@@ -1,0 +1,27 @@
+state={
+    id=990
+    name="STATE_990"
+    provinces={
+        1525 1553 12322
+    }
+    resources = {
+        tungsten = 50
+        steel = 25
+        rubber = 25
+    }
+    state_category = rural
+    manpower = 445606
+    history={
+        add_core_of = COG
+        owner = RAJ
+        buildings = {
+            infrastructure = 1
+        }
+
+        victory_points = {
+            1553 5
+        }
+    }
+    buildings_max_level_factor=1.000
+    local_supplies=1.000
+}
