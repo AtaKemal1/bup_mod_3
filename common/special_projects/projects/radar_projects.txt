@@ -17,8 +17,6 @@ sp_air_radar = {
 		FROM = { has_tech = electronic_mechanical_engineering }
 	}
 
-	}
-
 	ai_will_do = {
 		base = 1
 		modifier = {
