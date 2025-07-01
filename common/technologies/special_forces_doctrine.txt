@@ -538,6 +538,20 @@ technologies = {
 				movement = 0.10
 			}
 		}
+
+		light_armor = {
+			jungle = {
+				attack = 0.15
+				defence = 0.10
+			}
+		}
+
+		amphibious_light_armor = {
+			jungle = {
+				attack = 0.15
+				defence = 0.10
+			}
+		}
 		
 		path = {
 			leads_to_tech = marines_recon 
@@ -861,14 +875,6 @@ technologies = {
 			soft_attack = 0.1
 			breakthrough = 0.1
 			max_organisation = 5
-		}
-		
-		pioneer_support = {
-			battalion_mult = {
-				category = category_amphibious_tanks
-				armor = 0.15
-				breakthrough = 0.15
-			}
 		}
 		
 		doctrine = yes	

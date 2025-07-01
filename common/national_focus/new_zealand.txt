@@ -1951,7 +1951,7 @@
 		completion_reward = {
 			add_breakthrough_progress = {
 				specialization = specialization_land
-				value = 0.25
+				value = 0.50
 			}
 			if = {
 				limit = {
