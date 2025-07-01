@@ -480,6 +480,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.01
+			torpedo_attack = -2
 		}
 		add_average_stats = {
 			lg_armor_piercing = 5.5
@@ -503,6 +504,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.01
+			torpedo_attack = -2
 		}
 		add_average_stats = {
 			lg_armor_piercing = 7.0
@@ -530,6 +532,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.01
+			torpedo_attack = -2
 		}
 		add_average_stats = {
 			lg_armor_piercing = 8
@@ -558,6 +561,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.01
+			torpedo_attack = -2
 		}
 		add_average_stats = {
 			lg_armor_piercing = 9
