@@ -9,7 +9,7 @@ technologies = {
 	### Dogfighting/Fighters 
 	air_superiority = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 	
@@ -51,7 +51,7 @@ technologies = {
 	
 	forward_interception = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -80,7 +80,7 @@ technologies = {
 	
 	fighter_ace_initiative = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -118,7 +118,7 @@ technologies = {
 	
 	fighter_sweeps = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -150,7 +150,7 @@ technologies = {
 		
 	dogfighting_experience = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -181,7 +181,7 @@ technologies = {
 	
 	multialtitude_flying = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -221,7 +221,7 @@ technologies = {
 	### CAS tree 
 	dive_bombing = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 		
@@ -251,7 +251,7 @@ technologies = {
 	
 	direct_ground_support = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -281,7 +281,7 @@ technologies = {
 	
 	hunt_and_destroy = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -311,7 +311,7 @@ technologies = {
 
 	combat_unit_destruction = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -350,7 +350,7 @@ technologies = {
 
 	battlefield_support = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -375,7 +375,7 @@ technologies = {
 
 	ground_support_integration = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -402,7 +402,7 @@ technologies = {
 	
 	naval_strike_tactics = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -430,7 +430,7 @@ technologies = {
 	
 	flying_fortress = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -470,7 +470,7 @@ technologies = {
 		
 	night_bombing = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 	
@@ -504,7 +504,7 @@ technologies = {
 
 	day_bombing = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 	
@@ -537,7 +537,7 @@ technologies = {
 
 	massed_bomber_formations = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -568,7 +568,7 @@ technologies = {
 
 	air_offense = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -606,7 +606,7 @@ technologies = {
 	
 	high_level_bombing = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
@@ -637,7 +637,7 @@ technologies = {
 	
 	mass_destruction = {
 	
-		xp_unlock_cost = 100
+		xp_unlock_cost = 50
 		xp_research_bonus = 0.75
 		xp_research_type = air
 
