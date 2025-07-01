@@ -40,7 +40,7 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.55 }
+			hardness = { set = 0.7 }
 		}
 	}
 
@@ -85,7 +85,7 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.7 }
+			hardness = { set = 0.9 }
 		}
 	}
 
@@ -130,7 +130,7 @@ duplicate_archetypes = {
 		type = { armor amphibious }
 		for_each = {
 			variant_name = { find_and_replace = { "chassis" "equipment" } }
-			hardness = { set = 0.8 }
+			hardness = { set = 0.95 }
 		}
 	}
 
