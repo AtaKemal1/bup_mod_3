@@ -1,7 +1,7 @@
 #reload countrycolors
 
 GER = {
-	color = rgb { 54 54 54 }
+	color = rgb { 15 15 15 }
 	color_ui = rgb { 50 50 50 }
 }
 ENG = {
@@ -98,8 +98,8 @@ color = rgb { 138 163 117 }
 color_ui = rgb { 138 163 117 }
 }
 AST = {
-color = rgb { 20 141 76 }
-color_ui = rgb { 20 141 76 }
+color = rgb { 25 173 93 }
+color_ui = rgb { 140 22 199 }
 }
 CAN = {
 color = rgb { 119 48 39 }
@@ -126,8 +126,8 @@ color = rgb { 16 35 215 }
 color_ui = rgb { 50 108 255 }
 }
 RAJ = {
-color = rgb { 170 10 10 }
-color_ui = rgb { 170 10 10 }
+color = rgb { 255 128 0 }
+color_ui = rgb { 255 127 39 }
 }
 MAN = {
 color = rgb { 221 178 83 }
