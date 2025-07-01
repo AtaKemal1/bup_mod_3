@@ -20,7 +20,7 @@ NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_TASK_CAPACITY = 10
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_POLICY_ATTACH_COST = 25
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 45
 
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 
 -- Intelligence Defines
 NDefines.NIntel.STATIC_INTEL_SOURCE_RADAR_MAXIMUMS = { 10.0, 10.0, 10.0, 10.0 }
