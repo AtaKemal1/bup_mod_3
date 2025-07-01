@@ -225,6 +225,10 @@ focus_tree = {
         }
         search_filters = {FOCUS_FILTER_INDUSTRY}
         completion_reward = {
+            add_breakthrough_progress = {
+					specialization = specialization_land
+					value = 1.00
+			}
             random_owned_controlled_state = {
                 limit = {
                     free_building_slots = {
@@ -2147,7 +2151,7 @@ focus = {
             controls_state = 443
         }
     }
-    icon = GFX_goal_generic_position_armies
+    icon = GFX_focus_IRQ_found_the_iraqi_state_railways_alt
     x = 0
     y = 2
    
