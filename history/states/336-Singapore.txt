@@ -17,7 +17,7 @@ state = {
     history = {
 
         add_core_of = COG
-        owner = MAL
+        owner = ENG
         add_core_of = MAL
 
 		victory_points = {

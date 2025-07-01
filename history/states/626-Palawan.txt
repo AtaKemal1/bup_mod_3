@@ -9,7 +9,10 @@ state=
 	history=
 	{
         add_core_of = COG
-		owner = PHI
+		owner = USA
+		victory_points = {
+			4429 5
+		}		
 		buildings = {
 			infrastructure = 2
 			4429 = {
