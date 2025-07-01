@@ -1542,6 +1542,10 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			add_breakthrough_progress = {
+					specialization = specialization_land
+					value = 1.00
+				}
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = konstantin_rokossovsky 
 			custom_effect_tooltip = available_theorist

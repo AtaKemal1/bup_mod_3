@@ -5,6 +5,7 @@ state={
 
 	history={
         add_core_of = COG
+        add_core_of = SOV
 		owner = LIT
 		victory_points = {
 			11312 1 #Marijampole
