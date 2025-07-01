@@ -2,7 +2,7 @@ state={
     id=737
     name="STATE_737"
 	resources = {
-	    rubber = 15
+	    rubber = 35
 		steel = 30
 		tungsten = 25
 	}

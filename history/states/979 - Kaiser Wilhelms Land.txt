@@ -6,7 +6,7 @@ state = {
 	state_category = "rural"
 
 	resources = {
-	    rubber = 15
+	    rubber = 55
 		steel = 30
 		tungsten = 25
 	}
