@@ -4604,7 +4604,11 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 
 	completion_reward = {
-		add_dynamic_modifier = { modifier = RAJ_a_loyal_government }
+			add_breakthrough_progress = {
+			specialization = specialization_land
+			value = 1.00
+			}
+        add_dynamic_modifier = { modifier = RAJ_a_loyal_government }
 		
 		custom_effect_tooltip = generic_skip_one_line_tt
 		add_popularity = {

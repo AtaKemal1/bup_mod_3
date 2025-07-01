@@ -168,6 +168,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
 		completion_reward = {
+			add_breakthrough_progress = {
+			specialization = specialization_land
+			value = 1.00
+		}
 			2 = { #ROME
 				if = {
 					limit = { is_controlled_by = ROOT }

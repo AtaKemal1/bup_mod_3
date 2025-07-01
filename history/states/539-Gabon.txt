@@ -13,7 +13,7 @@ state={
 			infrastructure = 2
 			5139 = {
 				naval_base = 1
-
+            land_facility = 1
 			}
 
 		}
