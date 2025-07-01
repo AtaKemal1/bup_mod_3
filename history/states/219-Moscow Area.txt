@@ -19,7 +19,6 @@ state={
 			infrastructure = 4 #was: 8
 			arms_factory = 7
 			industrial_complex = 6
-			air_base = 10
 			6380 = {
                 landmark_kremlin = {
                     level = 1

@@ -18,7 +18,6 @@ state = {
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 2
-			air_base = 1
 
 			# Kuybyshev Hydroelectric Station
 			#6275 = { dam = 1 }
