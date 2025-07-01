@@ -43,11 +43,11 @@ if = {
 }
 add_timed_idea = {
 	idea = GER_peace_time_train
-	days = 1760
+	days = 1800
 }
 add_timed_idea = {
 	idea = GER_production_base
-	days = 30
+	days = 90
 }
 set_research_slots = 4
 set_stability = 0.75

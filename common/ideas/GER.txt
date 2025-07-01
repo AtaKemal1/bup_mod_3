@@ -3847,6 +3847,7 @@ ideas = {
 			picture = generic_sea_focused_navy
 
 			modifier = {
+				attrition = -0.75
 				air_training_xp_gain_factor = 10
 				training_time_factor = -0.75
 				experience_gain_navy_unit_factor = 10

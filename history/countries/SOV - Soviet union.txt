@@ -14,11 +14,11 @@ if = {
 }
 add_timed_idea = {
 	idea = GER_peace_time_train
-	days = 1960
+	days = 1978
 }
 add_timed_idea = {
 	idea = GER_production_base
-	days = 30
+	days = 90
 }
 #POLITICAL ADVISORS
 recruit_character = SOV_mikhail_kalinin
