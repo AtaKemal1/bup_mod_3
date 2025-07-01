@@ -1847,7 +1847,7 @@ foreign_politics = {
             has_dlc = "Waking the Tiger"
         }
 
-        cost = 50
+        cost = 3000
         fire_only_once = no
 
         days_re_enable = 30
