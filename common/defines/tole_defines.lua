@@ -20,7 +20,7 @@ NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_TASK_CAPACITY = 10
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_POLICY_ATTACH_COST = 25
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 45
 
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 30
 
 -- Intelligence Defines
 NDefines.NIntel.STATIC_INTEL_SOURCE_RADAR_MAXIMUMS = { 10.0, 10.0, 10.0, 10.0 }
@@ -183,7 +183,7 @@ NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0  
 
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 15
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 30
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
 NDefines.NBuildings.MAX_BUILDING_LEVELS=20
