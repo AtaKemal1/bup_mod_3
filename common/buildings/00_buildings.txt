@@ -85,13 +85,14 @@ buildings = {
 		base_cost = 750
 		icon_frame = 5
 		air_base = yes
+		level_cap = {
+			state_max = 200
+			shares_slots = no
+		}
 		value = 1
-		damage_factor = 0.5
+		damage_factor = 0.0
 		allied_build = yes
 		infrastructure_construction_effect = yes
-		level_cap = {
-			state_max = 10
-		}
 	}
 
 	supply_node = {
