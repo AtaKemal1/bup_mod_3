@@ -15,16 +15,12 @@ state = {
 	history = {
 
         add_core_of = COG
-		owner = MAL
+		owner = ENG
 		add_core_of = MAL
 
 		victory_points = {
-			4652 1 
-		}
-		
-		victory_points = {
-			12268 1 
-		}
+			12268 10
+		}		
 
 		buildings = {
 			infrastructure = 2
