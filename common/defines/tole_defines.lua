@@ -183,7 +183,7 @@ NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0  
 
-NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 15
+NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 30
 
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
 NDefines.NBuildings.MAX_BUILDING_LEVELS=20

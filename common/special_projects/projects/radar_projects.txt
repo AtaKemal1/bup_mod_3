@@ -17,11 +17,6 @@ sp_air_radar = {
 		FROM = { has_tech = electronic_mechanical_engineering }
 	}
 
-	resource_cost = {
-		resources = { 
-			steel = 6
-			aluminium = 6
-		 }
 	}
 
 	ai_will_do = {
