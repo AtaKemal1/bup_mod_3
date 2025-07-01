@@ -509,11 +509,11 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1941
+		start_year = 1940
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = 8 }
+			position = { x = -1 y = @1940 }
 		}
 
 		ai_will_do = {
@@ -990,12 +990,17 @@ technologies = {
 			modern_tank_artillery_chassis_1
 			modern_tank_aa_chassis_1
 		}
+
+		enable_equipment_modules = {
+			tank_modern_cannon
+		}
+
 		enable_subunits = {
 			modern_armor
 		}
 
-		research_cost = 10
-		start_year = 1950
+		research_cost = 2
+		start_year = 1945
 
 		folder = {
 			name = nsb_armour_folder

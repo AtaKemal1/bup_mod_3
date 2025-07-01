@@ -8,6 +8,7 @@ state={
 
 	history={
         add_core_of = COG
+        add_core_of = SOV
 		owner = LAT
 		victory_points = {
 			9340 5 

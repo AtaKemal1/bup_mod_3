@@ -4,7 +4,7 @@ soundeffect = {
 		sound = 
 			barbarossa_begin
 	}
-	volume = 0.80
+	volume = 0.20
 }
 
 soundeffect = {
@@ -13,7 +13,7 @@ soundeffect = {
 		sound = 
 			pacific_begin
 	}
-	volume = 0.85
+	volume = 0.2
 }
 
 soundeffect = {
@@ -22,7 +22,7 @@ soundeffect = {
 		sound = 
 			soviet_begin
 	}
-	volume = 0.60
+	volume = 0.15
 }
 
 soundeffect = {
@@ -31,7 +31,7 @@ soundeffect = {
 		sound = 
 			anscluss
 	}
-	volume = 0.95
+	volume = 0.2
 }
 
 soundeffect = {
@@ -40,7 +40,7 @@ soundeffect = {
 		sound = 
 			marco_polo
 	}
-	volume = 0.95
+	volume = 0.2
 }
 soundeffect = {
 	name = "rhineland"
@@ -48,7 +48,7 @@ soundeffect = {
 		sound = 
 			rhineland
 	}
-	volume = 0.85
+	volume = 0.2
 }
 
 soundeffect = {
@@ -57,5 +57,5 @@ soundeffect = {
 		sound = 
 			soviet_debuffs
 	}
-	volume = 0.75
+	volume = 0.2
 }

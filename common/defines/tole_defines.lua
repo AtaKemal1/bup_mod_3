@@ -18,7 +18,7 @@ NDefines.NIndustrialOrganisation.ENABLE_TASK_CAPACITY = true
 NDefines.NIndustrialOrganisation.FUNDS_FOR_RESEARCH_COMPLETION_PER_RESEARCH_COST = 1000
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_TASK_CAPACITY = 10
 NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_POLICY_ATTACH_COST = 25
-NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 180
+NDefines.NIndustrialOrganisation.DEFAULT_INITIAL_ATTACH_POLICY_COOLDOWN = 45
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 
