@@ -686,8 +686,8 @@ ITA_eco_buff_1 = { #Hidden idea to apply light cruisers production bonuses. Comm
 			targeted_modifier = {
 			tag = JAP
 			
-			attack_bonus_against = -0.2
-			defense_bonus_against = -0.2
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
 
 		    }
 		}
@@ -711,8 +711,8 @@ ITA_eco_buff_1 = { #Hidden idea to apply light cruisers production bonuses. Comm
 			targeted_modifier = {
 			tag = JAP
 			
-			attack_bonus_against = -0.15
-			defense_bonus_against = -0.15
+			attack_bonus_against = -0.075
+			defense_bonus_against = -0.075
 		    }
 		}
 		ITA_help_japan3 = {
@@ -731,8 +731,8 @@ ITA_eco_buff_1 = { #Hidden idea to apply light cruisers production bonuses. Comm
 			targeted_modifier = {
 			tag = JAP
 			
-			attack_bonus_against = -0.1
-			defense_bonus_against = -0.1
+			attack_bonus_against = -0.05
+			defense_bonus_against = -0.05
 		    }
 		}
 		ITA_axis_won_africa = {
