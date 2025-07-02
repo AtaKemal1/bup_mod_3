@@ -795,17 +795,13 @@ on_actions = {
                                 state = 623
                                 state = 327
                                 state = 625
-                                state = 627
                                 state = 333
                                 state = 334
                                 state = 672
+                                state = 627
                                 state = 733
                                 state = 422
-                                state = 335
-                                state = 667
-                                state = 721
                                 state = 673
-                                state = 668
                                 state = 669
                                 state = 523
                                 state = 737
@@ -815,7 +811,6 @@ on_actions = {
                                 state = 628
                                 state = 336
                                 state = 624
-                                state = 738
                                 state = 979     
                                 state = 636 
                                 state = 1017                           
@@ -888,6 +883,89 @@ on_actions = {
             }
 		}
 	}
+    on_state_control_changed = {
+        effect = {
+            else_if = {
+                limit = {
+                    ROOT = {
+                         tag = JAP
+                    }
+                    FROM.FROM = {
+                        AND = {
+                            NOT = { has_state_flag = rubber_state_transfered2 }
+                            OR = {
+                                state = 335                                                  
+                            }
+                            USA = {
+                                divisions_in_state = {
+                                    type = infantry
+                                    size < 1
+                                    state = FROM.FROM
+                                }
+                            }
+                            NZL = {
+                                divisions_in_state = {
+                                    type = infantry
+                                    size < 1
+                                    state = FROM.FROM
+                                }
+                            }
+                            AST = {
+                                divisions_in_state = {
+                                    type = infantry
+                                    size < 1
+                                    state = FROM.FROM
+                                }
+                            }
+                            RAJ = {
+                                divisions_in_state = {
+                                    type = infantry
+                                    size < 1
+                                    state = FROM.FROM
+                                }
+                            }
+                            SAF = {
+                                divisions_in_state = {
+                                    type = infantry
+                                    size < 1
+                                    state = FROM.FROM
+                                }
+                            }
+                            CAN = {
+                                divisions_in_state = {
+                                    type = infantry
+                                    size < 1
+                                    state = FROM.FROM
+                                }
+                            }
+                            ENG = {
+                                divisions_in_state = {
+                                    type = infantry
+                                    size < 1
+                                    state = FROM.FROM
+                                }
+                            }
+                            FRA = {
+                                divisions_in_state = {
+                                    type = infantry
+                                    size < 1
+                                    state = FROM.FROM
+                                }
+                            }
+                        }
+                    }
+                }
+                FROM.FROM = {
+                    set_state_flag = rubber_state_transfered2
+                }
+                JAP = { set_state_controller = FROM.FROM }
+                JAP = { set_state_controller = 667 }
+                JAP = { set_state_controller = 668 }
+                JAP = { set_state_controller = 721 }
+                JAP = { set_state_controller = 738 }
+            }
+        }
+    }
     on_startup = {
         effect = {    
 			219 = {
@@ -949,7 +1027,7 @@ on_actions = {
 			126 = {
 				add_building_construction = {
 					type = air_base
-					level = 30
+					level = 20
 					instant_build = yes
 				}
 			} 
@@ -967,7 +1045,7 @@ on_actions = {
 					instant_build = yes
 				}
 			}
-			361 = {
+			389 = {
 				add_building_construction = {
 					type = air_base
 					level = 200
