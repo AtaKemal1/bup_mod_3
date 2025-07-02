@@ -450,8 +450,8 @@ focus_tree = {
 		icon = GFX_focus_generic_improve_roads
 		prerequisite = { focus = ITA_develop_libya }
 
-		x = -3
-		y = 1
+		x = 0
+		y = 3
 		relative_position_id = ITA_develop_libya
 		cost = 5
 		available = {
@@ -481,11 +481,11 @@ focus_tree = {
 	focus = {
 		id = ITA_via_della_vittoria
 		icon = GFX_goal_reichsautobahn
-		prerequisite = { focus = ITA_litoranea_balbo }
+		prerequisite = { focus = ITA_develop_libya }
 
-		x = 0
+		x = -3
 		y = 1
-		relative_position_id = ITA_litoranea_balbo
+		relative_position_id = ITA_develop_libya
 		cost = 10
 		available = {
 			451 = {
@@ -786,7 +786,7 @@ focus_tree = {
 		icon = GFX_focus_generic_railroad
 		prerequisite = { focus = ITA_litoranea_balbo }
 		prerequisite = { focus = ITA_prospect_for_oil }
-		x = 1
+		x = 4
 		y = 2
 		relative_position_id = ITA_litoranea_balbo
 		cost = 10
@@ -845,8 +845,9 @@ focus_tree = {
 		text = "Egypt Secured"
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = ITA_litoranea_balbo }
+		mutually_exclusive = { focus = ITA_libyan_refineries2 focus = ITA_libyan_refineries3 focus = ITA_libyan_refineries4 }
 
-		x = -1
+		x = 2
 		y = 2
 		relative_position_id = ITA_litoranea_balbo
 		cost = 10
@@ -867,6 +868,167 @@ focus_tree = {
 			GER = {
 				add_ideas = ITA_axis_won_africa
 			}
+		
+		}
+	}
+
+	focus = {
+		id = ITA_libyan_refineries2
+		text = "Egypt Secured: Blitz Axis Maximus"
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = ITA_litoranea_balbo }
+		mutually_exclusive = { focus = ITA_libyan_refineries focus = ITA_libyan_refineries3 focus = ITA_libyan_refineries4 }
+
+		x = -4
+		y = 2
+		relative_position_id = ITA_litoranea_balbo
+		cost = 1
+
+		available = {
+			date < 1940.1.1
+			447 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+			452 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+			907 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_ideas = ITA_axis_won_africa2
+			GER = {
+				add_ideas = ITA_axis_won_africa2
+			}
+			every_country = {
+            limit = {
+                OR = {
+                    tag = USA
+                    tag = ENG
+                    tag = FRA
+                    tag = CAN
+                    tag = RAJ
+                    tag = AST
+                    tag = SAF
+                    tag = NZL
+                }
+            }
+            add_timed_idea = {
+	            idea = ITA_help_japan
+	            days = 730
+                }
+        }
+		
+		}
+	}
+
+	focus = {
+		id = ITA_libyan_refineries3
+		text = "Egypt Secured: Rommel-Hitler Duo Micro"
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = ITA_litoranea_balbo }
+		mutually_exclusive = { focus = ITA_libyan_refineries focus = ITA_libyan_refineries2 focus = ITA_libyan_refineries4 }
+
+		x = -2
+		y = 2
+		relative_position_id = ITA_litoranea_balbo
+		cost = 1
+
+		available = {
+			date < 1940.4.1
+			447 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+			452 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+			907 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_ideas = ITA_axis_won_africa
+			GER = {
+				add_ideas = ITA_axis_won_africa
+			}
+			every_country = {
+            limit = {
+                OR = {
+                    tag = USA
+                    tag = ENG
+                    tag = FRA
+                    tag = CAN
+                    tag = RAJ
+                    tag = AST
+                    tag = SAF
+                    tag = NZL
+                }
+            }
+            add_timed_idea = {
+	            idea = ITA_help_japan2
+	            days = 640
+                }
+        }		
+		}
+	}
+
+	focus = {
+		id = ITA_libyan_refineries4
+		text = "Egypt Secured: Lucky"
+		icon = GFX_focus_generic_rubber
+		prerequisite = { focus = ITA_litoranea_balbo }
+		mutually_exclusive = { focus = ITA_libyan_refineries focus = ITA_libyan_refineries2 focus = ITA_libyan_refineries3 }
+
+		x = 0
+		y = 2
+		relative_position_id = ITA_litoranea_balbo
+		cost = 1
+
+		available = {
+			date < 1940.7.1
+			447 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+			452 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+			907 = {
+				state_is_fully_controlled_by_ROOT_or_subject = yes
+			}
+		}
+
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+
+		completion_reward = {
+			add_ideas = ITA_axis_won_africa
+			GER = {
+				add_ideas = ITA_axis_won_africa
+			}
+			every_country = {
+            limit = {
+                OR = {
+                    tag = USA
+                    tag = ENG
+                    tag = FRA
+                    tag = CAN
+                    tag = RAJ
+                    tag = AST
+                    tag = SAF
+                    tag = NZL
+                }
+            }
+            add_timed_idea = {
+	            idea = ITA_help_japan3
+	            days = 550
+                }
+        }
 		
 		}
 	}

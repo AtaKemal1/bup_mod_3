@@ -201,6 +201,78 @@ on_actions = {
                 ITA = {
                     remove_ideas = ITA_axis_won_africa
                 }
+                USA = {
+                    remove_ideas = ITA_help_japan2
+                    remove_ideas = ITA_help_japan3
+                }
+                ENG = {
+                    remove_ideas = ITA_help_japan2
+                    remove_ideas = ITA_help_japan3
+                }
+                FRA = {
+                    remove_ideas = ITA_help_japan2
+                    remove_ideas = ITA_help_japan3
+                }
+                RAJ = {
+                    remove_ideas = ITA_help_japan2
+                    remove_ideas = ITA_help_japan3
+                }
+                CAN = {
+                    remove_ideas = ITA_help_japan2
+                    remove_ideas = ITA_help_japan3
+                }
+                AST = {
+                    remove_ideas = ITA_help_japan2
+                    remove_ideas = ITA_help_japan3
+                }
+                SAF = {
+                    remove_ideas = ITA_help_japan2
+                    remove_ideas = ITA_help_japan3
+                }
+                NZL = {
+                    remove_ideas = ITA_help_japan2
+                    remove_ideas = ITA_help_japan3
+                }
+            }
+            if = {
+                limit = {
+                    FROM.FROM = {
+                        state = 907
+                    }
+                    GER = {
+                        has_idea = ITA_axis_won_africa2
+                    }
+                }
+                GER = {
+                    remove_ideas = ITA_axis_won_africa2
+                }
+                ITA = {
+                    remove_ideas = ITA_axis_won_africa2
+                }
+                USA = {
+                    remove_ideas = ITA_help_japan
+                }
+                ENG = {
+                    remove_ideas = ITA_help_japan
+                }
+                FRA = {
+                    remove_ideas = ITA_help_japan
+                }
+                RAJ = {
+                    remove_ideas = ITA_help_japan
+                }
+                CAN = {
+                    remove_ideas = ITA_help_japan
+                }
+                AST = {
+                    remove_ideas = ITA_help_japan
+                }
+                SAF = {
+                    remove_ideas = ITA_help_japan
+                }
+                NZL = {
+                    remove_ideas = ITA_help_japan
+                }
             }
         }
         ### PACIFIC ON ACTIONS

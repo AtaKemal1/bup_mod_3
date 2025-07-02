@@ -778,7 +778,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 93
 		}
-		location = 11969
+		location = 12051
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1
@@ -790,7 +790,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 94
 		}
-		location = 9994
+		location = 512
 		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
 		start_experience_factor = 0.1

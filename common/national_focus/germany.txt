@@ -1815,6 +1815,32 @@ focus = {
 			add_ideas = GER_hard
 		}
 	}
+
+	focus = {
+		id = AfricaHP
+		text = "Africa HP Focus"
+		icon = GFX_focus_GER_army
+		prerequisite = { focus = GER_develop_modern_maneuver_warfare }
+
+		x = -3
+		y = 1
+		relative_position_id = GER_develop_modern_maneuver_warfare
+		cost = 1
+		available = {
+			date > 1939.9.1
+			date < 1940.1.1
+		}
+
+		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ARMY_XP FOCUS_FILTER_MILITARY_CHARACTER }
+
+		completion_reward = {
+			add_timed_idea = {
+	            idea = Africa
+	            days = 365
+            }
+		}
+	}
+
 	focus = {
 		id = GER_fortify_the_vaterland
 		icon = GFX_goal_fortify_the_westwall

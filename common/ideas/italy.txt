@@ -667,6 +667,74 @@ ITA_eco_buff_1 = { #Hidden idea to apply light cruisers production bonuses. Comm
 			}		
 		
 		}
+		ITA_help_japan = {
+			removal_cost = -1
+
+			picture = generic_stockpile_fuel
+				
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = -0.2
+			}		
+			targeted_modifier = {
+			tag = JAP
+			
+			attack_bonus_against = -0.2
+			defense_bonus_against = -0.2
+
+		    }
+		}
+		ITA_help_japan2 = {
+			removal_cost = -1
+
+			picture = generic_stockpile_fuel
+				
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.1
+			}
+					
+			targeted_modifier = {
+			tag = JAP
+			
+			attack_bonus_against = -0.15
+			defense_bonus_against = -0.15
+		    }
+		}
+		ITA_help_japan3 = {
+			removal_cost = -1
+
+			picture = generic_stockpile_fuel
+				
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			targeted_modifier = {
+			tag = JAP
+			
+			attack_bonus_against = -0.1
+			defense_bonus_against = -0.1
+		    }
+		}
 		ITA_axis_won_africa = {
 			removal_cost = -1
 
@@ -684,6 +752,25 @@ ITA_eco_buff_1 = { #Hidden idea to apply light cruisers production bonuses. Comm
 				consumer_goods_expected_value = -0.03
 				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		ITA_axis_won_africa2 = {
+			removal_cost = -1
+
+			picture = generic_stockpile_fuel
+				
+			allowed = {
+				original_tag = ITA
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+					
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				industrial_capacity_factory = 0.075
+				production_factory_max_efficiency_factor = 0.075
 			}
 		}
 		ITA_ind_reforms_1 = {
