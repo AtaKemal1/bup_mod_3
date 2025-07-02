@@ -12,7 +12,19 @@ defend_motherland = {
     dig_in_speed_factor = 0.5  	
     max_dig_in_factor = 0.5
 }
+defend_motherland2 = {
+    icon = GFX_modifiers_SOV_defend_moscow
+    enable = { always = yes }
+army_org_factor = 0.2
+army_strength_factor = -0.9
+army_armor_defence_factor = -0.33
+dig_in_speed_factor = 3
+max_dig_in = 50
+army_core_defence_factor = 0.33
+pocket_penalty = -0.95
+land_reinforce_rate = 0.33
 
+}
 pacific_superiority_idea = {
     icon = GFX_idea_GER_proud_eagle_that_ate_the_sun
     enable = { always = yes }
