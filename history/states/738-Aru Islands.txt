@@ -3,7 +3,6 @@ state={
     name="STATE_738"
     resources = {
         tungsten = 30.000
-        rubber = 20
     }
     history={
         add_core_of = COG

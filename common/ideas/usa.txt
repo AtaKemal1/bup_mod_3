@@ -784,7 +784,7 @@ ideas = {
 			
 			modifier = {
 				mobilization_speed = 0.2
-				training_time_army_factor = -0.15
+				training_time_army_factor = -0.64
 			}
 		}
 		new_deal = {

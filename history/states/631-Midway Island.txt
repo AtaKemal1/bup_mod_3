@@ -8,7 +8,6 @@ state=
 		oil=5
 		tungsten = 5
 		steel = 5
-		rubber = 5
 	}
 
 	history={

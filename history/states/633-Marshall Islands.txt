@@ -7,7 +7,6 @@ state={
 		oil=5
 		tungsten = 5
 		steel = 5
-		rubber = 5
 	}
 	
 	state_category = small_island
