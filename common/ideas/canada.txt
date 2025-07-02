@@ -22,6 +22,25 @@ ideas = {
 			}
 		}
 
+		Sekeristan = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = jap_supremacy_of_will
+
+			modifier = {
+				army_attack_factor = 0.01
+			}
+		}
+ 
 		CAN_great_depression_2 = {
 
 			allowed = {
