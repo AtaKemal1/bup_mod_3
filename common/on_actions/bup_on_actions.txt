@@ -744,7 +744,11 @@ on_actions = {
                                 state = 336
                                 state = 624
                                 state = 738
-                                state = 979                                
+                                state = 979     
+                                state = 636 
+                                state = 1017                           
+                                state = 284                          
+                                state = 723                                                     
                             }
                             USA = {
                                 divisions_in_state = {
