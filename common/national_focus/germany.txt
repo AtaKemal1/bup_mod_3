@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -8358,62 +8358,76 @@ focus = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 		
 		completion_reward = {
-
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = AUS }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = AUS }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 800 producer = AUS }
+			ENG = {
+				add_to_faction = POL
+			}
+			add_named_threat = { threat = 5 name = GER_danzig_or_war }
+			HUN = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			    }
+			}
+			HUN = {
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			    }
+			}
 			declare_war_on = {
 				target = POL  
 				type = annex_everything
 			}
-			
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }
-			
-			ENG = {
-				add_to_faction = POL
+			declare_war_on = {
+				target = ENG 
+				type = annex_everything
 			}
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-
-			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = AUS }
-			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = AUS }
-			add_equipment_to_stockpile = { type = support_equipment_1 amount = 800 producer = AUS }
-			
-			hidden_effect = {
-				ROM = {
-					declare_war_on = {
-						target = POL
-						type = annex_everything
-					}
-				}
-				HUN = {
-					declare_war_on = {
-						target = POL
-						type = annex_everything
-					}
-				}	
-				declare_war_on = {
-					target = ENG 
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = AST  
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = NZL  
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = CAN  
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = SAF
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = RAJ 
-					type = annex_everything
-				}
+			declare_war_on = {
+				target = AST  
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NZL  
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = CAN  
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAF
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = RAJ 
+				type = annex_everything
 			}
 		}
 	}
@@ -8665,6 +8679,61 @@ focus = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+
+			HUN = {
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			    }
+			}
+			HUN = {
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			    }
+			}
+			HUN = {
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = LUX
+				type = annex_everything
+			    }
+			}
 			#limit wargoals to when it makes sense to give them. No faction, war or non exist
 			if = { 
 				limit = {
@@ -8841,6 +8910,43 @@ focus = {
 
 		completion_reward = {
 
+			HUN = {
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+			    }
+			}
+			HUN = {
+			declare_war_on = {
+				target = NOR
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = NOR
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = NOR
+				type = annex_everything
+			    }
+			}
+
 			if = {
 				limit = {
 					NOT = { DEN = { is_in_faction_with = GER } }
@@ -8875,30 +8981,6 @@ focus = {
 				}
 				ENG = {
 					add_to_faction = DEN
-				}
-				ROM = {
-					declare_war_on = {
-						target = NOR
-						type = annex_everything
-					}
-				}
-				HUN = {
-					declare_war_on = {
-						target = NOR
-						type = annex_everything
-					}
-				}
-				ROM = {
-					declare_war_on = {
-						target = DEN
-						type = annex_everything
-					}
-				}
-				HUN = {
-					declare_war_on = {
-						target = DEN
-						type = annex_everything
-					}
 				}
 			}
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -8973,6 +9055,12 @@ focus = {
 					target = FRA
 					type = annex_everything
 				}
+			}
+			BUL = {
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+			}
 			}
 		}
 	}
@@ -9533,6 +9621,30 @@ focus = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }	
 		
 		completion_reward = {
+			HUN = {
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			    }
+			}
+			ITA = {
+			declare_war_on = {
+				target = YUG
+				type = annex_everything
+			    }
+			}
 			ENG = {
 				add_to_faction = YUG }
 			declare_war_on = {
@@ -9578,6 +9690,30 @@ focus = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+			HUN = {
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			    }
+			}
+			ITA = {
+			declare_war_on = {
+				target = GRE
+				type = annex_everything
+			    }
+			}
 			ENG = {
 				add_to_faction = GRE }
 			declare_war_on = {
@@ -9830,24 +9966,30 @@ focus = {
 					id = wuw_GER_legions.8
 				}	
 			}
-			ROM = {
-					declare_war_on = {
-						target = SOV
-						type = annex_everything
-					}
-				}
 			HUN = {
-					declare_war_on = {
-						target = SOV
-						type = annex_everything
-					}
-				}
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			    }
+			}
+			ROM = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			    }
+			}
+			BUL = {
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			    }
+			}
 			ITA = {
-					declare_war_on = {
-						target = SOV
-						type = annex_everything
-					}
-				}
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			    }
+			}
 		}
 	}
 
