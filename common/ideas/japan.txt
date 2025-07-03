@@ -514,7 +514,7 @@ ideas = {
 				justify_war_goal_time = -0.2
 				production_speed_industrial_complex_factor = -0.1
 				special_forces_min = 300
-			    convoy_raiding_efficiency_factor = -0.25
+			    industrial_capacity_factory = 0.35
 			}
 		}
 
