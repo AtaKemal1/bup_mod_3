@@ -3523,6 +3523,35 @@ technologies = {
 		}
 	}
 
+	ArmoredSamurai = {
+		
+		category_all_armor = {
+			breakthrough = 0.20
+		}
+
+		category_tanks = {
+			max_organisation = 18
+		}
+
+		motorized = {
+			default_morale = 0.7
+		}
+		mechanized = {
+			default_morale = 0.7
+		}
+		category_all_armor = {
+			maximum_speed = 0.1
+		}
+
+		doctrine = yes
+		research_cost = 1
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
+
 	masterful_blitz = {
 		enable_tactic = tactic_masterful_blitz
 

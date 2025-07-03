@@ -59,7 +59,6 @@ equipments = {
 			mid_1_custom_slot = {
 				required = yes
 				allowed_module_categories = {
-					ship_torpedo
 					ship_anti_air
 					ship_light_battery
 					dp_light_battery
@@ -173,7 +172,6 @@ equipments = {
 			mid_1_custom_slot = {
 				required = yes
 				allowed_module_categories = {
-					ship_torpedo
 					ship_anti_air
 					ship_light_battery
 					dp_light_battery
@@ -243,7 +241,6 @@ equipments = {
 			mid_1_custom_slot = {
 				required = yes
 				allowed_module_categories = {
-					ship_torpedo
 					ship_anti_air
 					ship_light_battery
 					dp_light_battery
@@ -324,7 +321,6 @@ equipments = {
 			mid_1_custom_slot = {
 				required = yes
 				allowed_module_categories = {
-					ship_torpedo
 					ship_light_battery
 					ship_medium_battery
 					ship_airplane_launcher
