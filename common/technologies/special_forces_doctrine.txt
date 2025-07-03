@@ -541,15 +541,15 @@ technologies = {
 
 		light_armor = {
 			jungle = {
-				attack = 0.15
-				defence = 0.10
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 
 		amphibious_light_armor = {
 			jungle = {
-				attack = 0.15
-				defence = 0.10
+				attack = 0.05
+				defence = 0.05
 			}
 		}
 		
