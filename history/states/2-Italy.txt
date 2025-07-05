@@ -11,9 +11,6 @@ state = {
 		victory_points = { 9904 40 } #Rome
 		victory_points = { 11846 1 } #Anzio (was 5)
 		buildings = {
-			923 = {
-			naval_facility = 1
-			}
 			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 4
