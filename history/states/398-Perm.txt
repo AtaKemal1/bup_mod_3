@@ -1,12 +1,13 @@
-state={
-	id=398
-	name="STATE_398"
-	resources={
-		aluminium=6.000
+
+state = {
+	id = 398
+	name = "STATE_398"
+	manpower = 2135879
+	state_category = rural
+	resources = {
+		aluminium = 6 # was: 10
 	}
-	provinces={
-		88 123 189 206 390 1336 1365 1380 1754 3127 4314 4326 4372 4802 4874 6025 6162 6274 6288 7346 7375 7824 9283 10216 10286 10314 11111 11124 11170 11195 11228 11352 12175 12187 12216 12527 12587 12626 12659 
-	}
+
 	history = {
         add_core_of = COG
 		owner = SOV
@@ -24,9 +25,11 @@ state={
 				arms_factory = 2
 			}
 		}
-	}	
-	manpower=2135879
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	}
+
+	provinces = {
+		123 189 206 390 1336 1365 1380 1754 3127 4314 4326 4372 4802 4874 6025 7346 7375 7824 9283 10216 10286 10314 11111 11195 11228 11352 12175 12187 12216 12527 12587 12626 12659 
+	}
+
+	local_supplies = 0.0 
 }
