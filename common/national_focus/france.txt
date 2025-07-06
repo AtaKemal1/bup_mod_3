@@ -1837,6 +1837,27 @@
 			}
 			if = {
 				limit = {
+					NOT = { has_tech = electronic_mechanical_engineering }
+
+				}
+				set_technology = { electronic_mechanical_engineering = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = mechanical_computing }
+
+				}
+				set_technology = { mechanical_computing = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = computing_machine }
+
+				}
+				set_technology = { computing_machine = 1 }
+			}
+			if = {
+				limit = {
 					NOT = { has_tech = improved_computing_machine }
 
 				}
