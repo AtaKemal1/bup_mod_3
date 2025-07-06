@@ -215,7 +215,10 @@ categories =  {
 			bunker = 4
 			coastal_bunker = 6
 		}
-		
+		units = {
+			attack = -0.1
+			defence = -0.05
+		}		
 		sickness_chance = 1.0
 		
 		supply_flow_penalty_factor = 0.14
