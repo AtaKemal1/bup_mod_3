@@ -1807,7 +1807,7 @@
 		icon = GFX_focus_PER_communist_afghanistan_intervention
 		x = 13
 		y = 7
-		cost = 10
+		cost = 5
 		
 		available = {
 			has_capitulated = yes
@@ -1816,6 +1816,157 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_tech = improved_medium_tank_chassis }
+
+				}
+				set_technology = { improved_medium_tank_chassis = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = armor_tech_1 }
+
+				}
+				set_technology = { armor_tech_1 = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = armor_tech_2 }
+
+				}
+				set_technology = { armor_tech_2 = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = improved_computing_machine }
+
+				}
+				set_technology = { improved_computing_machine = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = tech_maintenance_company }
+
+				}
+				set_technology = { tech_maintenance_company = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = tech_maintenance_company2 }
+
+				}
+				set_technology = { tech_maintenance_company2 = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = radio }
+
+				}
+				set_technology = { radio = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = improved_radio }
+
+				}
+				set_technology = { improved_radio = 1 }
+			}
+			if = {
+				limit = {
+					NOT = { has_tech = mechanised_infantry }
+
+				}
+				set_technology = { mechanised_infantry = 1 }
+			}
+			create_equipment_variant = {
+				name = "De Gaulle"
+				type = medium_tank_chassis_2
+				modules = {
+					main_armament_slot = tank_high_velocity_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_cast_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = secondary_turret_small_cannon
+					special_type_slot_2 = stabilizer
+					special_type_slot_3 = tank_radio_2
+					special_type_slot_4 = easy_maintenance
+				}
+				upgrades = {
+					tank_nsb_armor_upgrade = 14
+				}
+			}
+			create_equipment_variant = {
+				name = "YAK"
+				type = light_tank_chassis_1
+				modules = {
+					main_armament_slot = flamethrower
+					turret_type_slot = tank_light_fixed_superstructure_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_diesel_engine
+				}
+			}
+			create_equipment_variant = {
+				name = "Recon"
+				type = light_tank_chassis_1
+				modules = {
+					main_armament_slot = tank_small_cannon_2
+					turret_type_slot = tank_light_fixed_superstructure_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_diesel_engine
+				}
+			}
+			hidden_effect={
+					division_template = {
+					name = "Emmanuel 'Napoleon' Macron's Personal Standard"
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 1 y = 1 }
+						medium_armor = { x = 1 y = 2 }
+						medium_armor = { x = 1 y = 3 }
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						medium_armor = { x = 2 y = 3 }
+						mechanized = { x = 3 y = 0 }
+						mechanized = { x = 3 y = 1 }
+						mechanized = { x = 3 y = 2 }
+						mechanized = { x = 3 y = 3 }
+						mechanized = { x = 4 y = 0 }
+						mechanized = { x = 4 y = 1 }
+						mechanized = { x = 4 y = 2 }
+						mot_anti_air_brigade = { x = 5 y = 0 }
+						mot_anti_air_brigade = { x = 5 y = 1 }
+					}
+					support = {
+						assault_engineer = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						light_tank_recon = { x = 0 y = 2  } 
+						anti_tank = { x = 0 y = 3  }
+						field_hospital = { x = 0 y = 4  }
+						light_flame_tank = { x = 0 y = 5  }
+						
+					}
+					priority = 2
+				}
+				539 = {
+					for_loop_effect = {
+					end = 4
+					create_unit = {
+						division = "name = \"Emmanuel 'Napoleon' Macron's Personal Standard\" division_template = \"Emmanuel 'Napoleon' Macron's Personal Standard\" start_experience_factor = 0.4" 
+						owner = FRA
+						}
+					}}
+			}
+			custom_effect_tooltip="4 Tank Divisions Will Spawn in Gabon"
+
 			if = {
 				limit = {
 					has_idea = war_economy
