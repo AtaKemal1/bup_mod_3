@@ -1816,13 +1816,11 @@
 		available_if_capitulated = yes
 
 		completion_reward = {
+			hidden_effect={
 			if = {
 				limit = {
-					NOT = { has_tech = improved_medium_tank_chassis }
-
+					has_tech = improved_medium_tank_chassis
 				}
-				set_technology = { improved_medium_tank_chassis = 1 }
-			}
 			if = {
 				limit = {
 					NOT = { has_tech = armor_tech_1 }
@@ -1879,6 +1877,7 @@
 				}
 				set_technology = { mechanised_infantry = 1 }
 			}
+			set_technology = { fra_flame_assault = 1 }
 			create_equipment_variant = {
 				name = "De Gaulle"
 				type = medium_tank_chassis_2
@@ -1899,7 +1898,7 @@
 			}
 			create_equipment_variant = {
 				name = "YAK"
-				type = light_tank_chassis_1
+				type = light_tank_flame_chassis_1
 				modules = {
 					main_armament_slot = flamethrower
 					turret_type_slot = tank_light_fixed_superstructure_turret
@@ -1919,7 +1918,6 @@
 					engine_type_slot = tank_diesel_engine
 				}
 			}
-			hidden_effect={
 					division_template = {
 					name = "Emmanuel 'Napoleon' Macron's Personal Standard"
 					regiments = {
@@ -1958,14 +1956,15 @@
 				}
 				539 = {
 					for_loop_effect = {
-					end = 4
+					end = 3
 					create_unit = {
 						division = "name = \"Emmanuel 'Napoleon' Macron's Personal Standard\" division_template = \"Emmanuel 'Napoleon' Macron's Personal Standard\" start_experience_factor = 0.4" 
 						owner = FRA
 						}
 					}}
+				}
 			}
-			custom_effect_tooltip="4 Tank Divisions Will Spawn in Gabon"
+			custom_effect_tooltip="If you have researched the Improved Medium Tank Chassis, this focus will unlock Mechanized I and other tank technologies and will spawn 3 tank divisions in Gabon"
 
 			if = {
 				limit = {
