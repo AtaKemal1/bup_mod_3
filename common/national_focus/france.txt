@@ -1837,6 +1837,13 @@
 			}
 			if = {
 				limit = {
+					NOT = { has_tech = tech_field_hospital }
+
+				}
+				set_technology = { tech_field_hospital = 1 }
+			}
+			if = {
+				limit = {
 					NOT = { has_tech = electronic_mechanical_engineering }
 
 				}
